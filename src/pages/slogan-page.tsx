@@ -38,7 +38,10 @@ const Slogan = () => {
         </p>
       </div>
       <div className="w-15 h-15 border border-black rounded-full mt-8 hover:bg-[#D8EABE] cursor-pointer place-items-center place-content-center overflow-hidden ">
-        <img src="/arrow.svg" alt="arrow"
+        <img 
+          // src="/arrow.svg" 
+          src={`${import.meta.env}arrow.svg`}
+          alt="arrow"
           className="w-7 h-7 rotate-90 arrow-animation "
         />
       </div>

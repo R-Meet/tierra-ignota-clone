@@ -7,43 +7,43 @@ gsap.registerPlugin(ScrollTrigger);
 
 const pillData = [
   {
-    img: '/couple.jpeg',
+    img: `$${import.meta.env.BASE_URL}/couple.jpeg`,
     title: 'Indonesia',
     info: 'Minangkabau and coexistence with the Mentawai tribe',
     date: '07 / 17 de agosto, 2025',
   },
   {
-    img: '/girl.jpeg',
+    img: `$${import.meta.env.BASE_URL}/girl.jpeg`,
     title: 'Indonesia',
     info: 'Funeral rites of the Toraja',
     date: '18 / 25 agosto, 2025',
   },
   {
-    img: '/honey-hunters.jpeg',
+    img: `$${import.meta.env.BASE_URL}/honey-hunters.jpeg`,
     title: 'Nepal',
     info: 'Honey hunters in the Himalayan mountains',
     date: '10 / 19 octubre, 2025',
   },
   {
-    img: '/trees.jpg',
+    img: `$${import.meta.env.BASE_URL}/trees.jpg`,
     title: 'Yemen',
     info: 'Socotra, the island at the end of the world',
     date: '16 / 23 noviembre, 2025',
   },
   {
-    img: '/hot-sand.jpg',
+    img: `$${import.meta.env.BASE_URL}/hot-sand.jpg`,
     title: 'Colombia',
     info: 'Prospective expedition to the Tikuna territory',
     date: '04 / 16 de Diciembre, 2025',
   },
   {
-    img: '/cold-man.jpg',
+    img: `$${import.meta.env.BASE_URL}/cold-man.jpg`,
     title: 'Siberia',
     date: '05 / 11 diciembre, 2025',
     info: 'Tundra Nomads',
   },
   {
-    img: '/african-family.jpg',
+    img: `$${import.meta.env.BASE_URL}/african-family.jpg`,
     title: 'Sudán del Sur',
     date: '29 Diciembre, 2025 / 9 Enero, 2026',
     info: 'Coexistence with ancestral tribes',

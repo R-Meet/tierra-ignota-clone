@@ -30,7 +30,8 @@ const Navbar = () => {
         <span className="opacity-60">EN</span>
       </div>
       <div className="w-max h-5 overflow-hidden">
-        <img src="/nav-logo-black.svg" alt="img" 
+        {/* <img src={`/nav-logo-black.svg`} alt="img"  */}
+        <img src={`${import.meta.env.BASE_URL}/nav-logo-black.svg`} alt="img" 
           className="w-full h-full object-cover"
         />
       </div>

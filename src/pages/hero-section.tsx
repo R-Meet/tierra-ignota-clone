@@ -51,7 +51,8 @@ const Hero = () => {
           ref={bgImgContainerRef}
         >
           <img
-            src="/honey-hunters.jpeg"
+            // src="/honey-hunters.jpeg"
+            src={`${import.meta.env.BASE_URL}honey-hunters.jpeg`} 
             alt="img"
             className="absolute top-0 left-0 h-full w-full min-w-[50%] object-cover"
           />
@@ -63,12 +64,22 @@ const Hero = () => {
           <div id="tierra-img" className="w-[50%] overflow-hidden"
             ref={tierraImgDivRef}
           >
-            <img src="/tierra-svg.svg" alt="img" className="w-full h-full object-cover"/>
+            <img 
+              // src="/tierra-svg.svg" 
+              src={`${import.meta.env.BASE_URL}tierra-svg.svg`} 
+              alt="img" 
+              className="w-full h-full object-cover"
+            />
           </div>
           <div id="ignota-img" className="w-[50%] overflow-hidden"
             ref={ignotaImgDivRef}
           >
-            <img src="/ignota-svg.svg" alt="img" className="w-full h-full object-cover"/>
+            <img 
+              // src="/ignota-svg.svg" 
+              src={`${import.meta.env.BASE_URL}ignota-svg.svg`} 
+              alt="img" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>

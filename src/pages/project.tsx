@@ -108,7 +108,8 @@ const Project = () => {
       {/* Right Image */}
       <div className="w-full h-[300px] sm:h-[400px] md:h-full overflow-hidden">
         <img
-          src="/car.avif"
+          // src="/car.avif"
+          src={`${import.meta.env.BASE_URL}car.avif`}
           alt="img"
           className="w-full h-full object-cover"
           ref={imgRef}
