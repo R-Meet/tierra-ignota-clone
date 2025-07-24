@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'pp-neue';
+  src: url('/fonts/pp-neue.woff2');
+}
+
+@font-face {
+  font-family: 'romie';
+  src: url('/fonts/romie.woff2');
+}
+
+.--font-pp {
+  font-family: 'pp';
+}
+.--font-romie {
+  font-family: 'romie';
+}
+
+::selection {
+  background: #B2ABEF;
+  color: #000;
+}
+
+@keyframes arrowAnimate {
+  0% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.arrow-animation {
+  animation: arrowAnimate 2s ease-in-out infinite;
+  animation-duration: 1.5s;
+}
