@@ -1,7 +1,7 @@
 import { Navbar } from "./components/navbar";
 import Footer from "./pages/footer";
 import Hero from "./pages/hero-section";
-import Proximas from "./pages/poximas-page";
+import Proximas from "./pages/proximas-page";
 import Project from "./pages/project";
 import Slogan from "./pages/slogan-page";
 
