@@ -39,7 +39,7 @@ const Footer = () => {
   }, [])
 
   return (
-    <footer className="w-full min-h-[60vh] bg-[#B2ABEF] overflow-hidden" ref={footerRef}>
+    <footer className="w-full min-h-[61vh] bg-[#B2ABEF] overflow-hidden" ref={footerRef}>
       <div className="w-full h-full relative grid grid-rows-7">
         <div className="row-span-3 grid grid-cols-1 md:grid-cols-2">
           <div className="w-full border-b md:border-b-0 md:border-r grid grid-rows-3">
@@ -54,7 +54,12 @@ const Footer = () => {
                   className="flex-1 border-r px-5 py-3 outline-none bg-white placeholder:text-gray-500 placeholder:opacity-90 rounded-l-4xl"
                 />
                 <button className="bg-[#D8EABE] px-4 py-2 rounded-r-4xl flex items-center justify-center">
-                  <img src="/arrow.svg" alt="submit" className="w-4 h-4" />
+                  <img 
+                    // src="/arrow.svg" 
+                    src={`${import.meta.env.BASE_URL}arrow.svg`}
+                    alt="submit" 
+                    className="w-4 h-4" 
+                  />
                 </button>
               </div>
             </div>
@@ -84,10 +89,20 @@ const Footer = () => {
             <p className="text-lg font-medium">Follow Us</p>
             <div className="flex gap-4">
               <a href="#" className="flex items-center justify-center p-3 rounded-full border hover:bg-[#D8EABE] transition-colors">
-                <img src="/insta-svg.svg" alt="Instagram" className="w-6 h-6" />
+                <img 
+                  // src="/insta-svg.svg" 
+                  src={`${import.meta.env.BASE_URL}insta-svg.svg`} 
+                  alt="Instagram" 
+                  className="w-6 h-6" 
+                />
               </a>
               <a href="#" className="flex items-center justify-center p-3 rounded-full border hover:bg-[#D8EABE] transition-colors">
-                <img src="/facebook.svg" alt="Facebook" className="w-6 h-6" />
+                <img 
+                  // src="/facebook.svg" 
+                  src={`${import.meta.env.BASE_URL}facebook.svg`} 
+                  alt="Facebook" 
+                  className="w-6 h-6" 
+                />
               </a>
             </div>
           </div>
@@ -128,8 +143,20 @@ const Footer = () => {
 
         {/* Logos */}
         <div className="row-span-2 border-b flex flex-col sm:flex-row items-center justify-between px-4 py-4 gap-4">
-          <img ref={tierraImgRef} src="/tierra-black.svg" alt="Tierra Logo" className="w-full sm:w-1/2 max-h-24 object-contain" />
-          <img ref={ignotaImgRef} src="/ignota-black.svg" alt="Ignota Logo" className="w-full sm:w-1/2 max-h-24 object-contain" />
+          <img 
+            ref={tierraImgRef} 
+            // src="/tierra-black.svg" 
+            src={`${import.meta.env.BASE_URL}tierra-black.svg`} 
+            alt="Tierra Logo" 
+            className="w-full sm:w-1/2 max-h-24 object-contain" 
+          />
+          <img 
+            ref={ignotaImgRef} 
+            // src="/ignota-black.svg" 
+            src={`${import.meta.env.BASE_URL}ignota-black.svg`} 
+            alt="Ignota Logo" 
+            className="w-full sm:w-1/2 max-h-24 object-contain" 
+          />
         </div>
 
         <div className="flex items-center justify-center px-4 py-4 text-xs sm:text-sm text-center --font-romie font-semibold tracking-widest">

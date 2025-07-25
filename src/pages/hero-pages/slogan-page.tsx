@@ -27,10 +27,10 @@ const Slogan = () => {
       text-3xl md:text-8xl lg:9xl flex flex-col gap-5 items-center justify-center text-center
     " >
       <div ref={sloganContainerRef}>
-        <p>
+        <a href={`${import.meta.env.BASE_URL}/project`}>
           <span className="text-[#B2ABEF] italic border-b border-black cursor-pointer hover:text-black transition duration-700">We organize</span>
           <span> expeditions</span>
-        </p>
+        </a>
         <p>
           <span>immersive a </span>
           <span className="text-[#B2ABEF] italic border-b border-black cursor-pointer hover:text-black transition duration-700">places</span>
@@ -38,7 +38,10 @@ const Slogan = () => {
         </p>
       </div>
       <div className="w-15 h-15 border border-black rounded-full mt-8 hover:bg-[#D8EABE] cursor-pointer place-items-center place-content-center overflow-hidden ">
-        <img src="/arrow.svg" alt="arrow"
+        <img 
+          // src="/arrow.svg" 
+          src={`${import.meta.env.BASE_URL}arrow.svg`}
+          alt="arrow"
           className="w-7 h-7 rotate-90 arrow-animation "
         />
       </div>

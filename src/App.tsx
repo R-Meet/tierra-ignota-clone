@@ -1,19 +1,16 @@
-import { Navbar } from "./components/navbar";
-import Footer from "./pages/footer";
-import Hero from "./pages/hero-section";
-import Proximas from "./pages/proximas-page";
-import Project from "./pages/project";
-import Slogan from "./pages/slogan-page";
+import { createRouter, RouterProvider } from "@tanstack/react-router";
+import { routeTree } from "./routeTree.gen";
 
 const Home = () => {
+
+  const router = createRouter({
+    routeTree,
+    basepath: '/tierra-ignota-clone',
+  });
+
   return (
     <main className="relative">
-      <Hero/>
-      <Navbar/>
-      <Slogan/>
-      <Proximas/>
-      <Project/>
-      <Footer/>
+      <RouterProvider router={router} />
     </main>
   )
 }

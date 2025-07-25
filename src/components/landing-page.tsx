@@ -2,10 +2,16 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useEffect, useRef } from "react";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
-const Hero = () => {
+type LandingPageProp = {
+  bgImg: string,
+  imgLeft: string,
+  imgRight: string,
+  height?: string
+}
+
+const LandingPage = ({ bgImg, imgLeft, imgRight, height }: LandingPageProp) => {
 
   const containerRef = useRef<HTMLDivElement | null>(null);
   const bgImgContainerRef = useRef<HTMLDivElement | null>(null);
@@ -39,7 +45,7 @@ const Hero = () => {
 
 
   return (
-    <div className="w-full h-screen sticky top-0 left-0 -z-50 overflow-hidden "
+    <div className={`w-full sticky top-0 left-0 -z-50 overflow-hidden ${height || 'h-screen'}`}
       ref={containerRef}
     >
       <div className="relative h-full w-full bg-zinc-900"
@@ -50,8 +56,11 @@ const Hero = () => {
           className="absolute top-0 left-0 -z-10 w-full h-full overflow-hidden"
           ref={bgImgContainerRef}
         >
+            
           <img
-            src="/honey-hunters.jpeg"
+            // src="/honey-hunters.jpeg"
+            // src={`${import.meta.env.BASE_URL}honey-hunters.jpeg`} 
+            src={ bgImg }
             alt="img"
             className="absolute top-0 left-0 h-full w-full min-w-[50%] object-cover"
           />
@@ -63,12 +72,24 @@ const Hero = () => {
           <div id="tierra-img" className="w-[50%] overflow-hidden"
             ref={tierraImgDivRef}
           >
-            <img src="/tierra-svg.svg" alt="img" className="w-full h-full object-cover"/>
+            <img 
+              // src="/tierra-svg.svg" 
+              // src={`${import.meta.env.BASE_URL}tierra-svg.svg`} 
+              src={ imgLeft }
+              alt="img" 
+              className="w-full h-full object-cover"
+            />
           </div>
           <div id="ignota-img" className="w-[50%] overflow-hidden"
             ref={ignotaImgDivRef}
           >
-            <img src="/ignota-svg.svg" alt="img" className="w-full h-full object-cover"/>
+            <img 
+              // src="/ignota-svg.svg" 
+              // src={`${import.meta.env.BASE_URL}ignota-svg.svg`} 
+              src={ imgRight }
+              alt="img" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
@@ -76,4 +97,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default LandingPage
