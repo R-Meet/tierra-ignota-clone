@@ -20,6 +20,7 @@ const LandingPage = ({ bgImg, imgLeft, imgRight, height }: LandingPageProp) => {
   const ignotaImgDivRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+
     gsap.fromTo(
       bgColorContainerRef.current,
       { backgroundColor: '#18181b ' },
@@ -66,10 +67,10 @@ const LandingPage = ({ bgImg, imgLeft, imgRight, height }: LandingPageProp) => {
           />
         </div>
 
-        <div className="absolute bottom-0 left-0 z-10 w-full place-content-center place-items-center p-6
-          md:flex justify-between"
+        {/* <div className="absolute bottom-0 left-0 z-10 w-full place-content-center place-items-center p-6
+          md:flex md:flex-row flex-col justify-between"
         >
-          <div id="tierra-img" className="w-[50%] overflow-hidden"
+          <div id="tierra-img" className=" w-[70%] md:w-[50%] overflow-hidden"
             ref={tierraImgDivRef}
           >
             <img 
@@ -80,7 +81,7 @@ const LandingPage = ({ bgImg, imgLeft, imgRight, height }: LandingPageProp) => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div id="ignota-img" className="w-[50%] overflow-hidden"
+          <div id="ignota-img" className=" w-[70%] md:w-[50%] overflow-hidden"
             ref={ignotaImgDivRef}
           >
             <img 
@@ -91,7 +92,33 @@ const LandingPage = ({ bgImg, imgLeft, imgRight, height }: LandingPageProp) => {
               className="w-full h-full object-cover"
             />
           </div>
+        </div> */}
+        <div className="absolute bottom-0 left-0 z-10 w-full flex flex-wrap justify-center items-end gap-4 p-4 md:justify-between">
+          <div
+            id="tierra-img"
+            className="w-full sm:w-[45%]  overflow-hidden"
+            ref={tierraImgDivRef}
+          >
+            <img
+              src={imgLeft}
+              alt="img"
+              className="w-full h-full object-contain"
+            />
+          </div>
+
+          <div
+            id="ignota-img"
+            className="w-full sm:w-[45%]  overflow-hidden"
+            ref={ignotaImgDivRef}
+          >
+            <img
+              src={imgRight}
+              alt="img"
+              className="w-full h-full object-contain"
+            />
+          </div>
         </div>
+
       </div>
     </div>
   )

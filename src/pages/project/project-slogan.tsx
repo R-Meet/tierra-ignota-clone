@@ -1,10 +1,6 @@
-import { useNavigate } from '@tanstack/react-router'
 import { Button } from '../../components/button'
 
 const ProjectSlogan = () => {
-
-  const navigate = useNavigate();
-
   return (
     <div className="min-h-screen border-b w-full flex flex-col items-center justify-center gap-6 px-4 py-10 md:px-12 bg-[#F2F0E9] --font-romie text-center">
       
@@ -18,7 +14,7 @@ const ProjectSlogan = () => {
       </p>
       
       <div>
-        <Button text="Travel with us" onClick={ () => navigate({ to: `${import.meta.env.BASE_URL}/expenditions` })}/>
+        <Button text="Travel with us" onClick={ () => window.location.href = `${import.meta.env.BASE_URL}/expenditions`}/>
       </div>
     </div>
   )

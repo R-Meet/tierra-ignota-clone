@@ -97,7 +97,7 @@ const Proximas = () => {
 
         <div className="w-full pt-2 pb-2 flex justify-between sticky top-14 left-0 bg-[#F2F0E9] z-30">
           <span className="text-2xl -skew-x-6">Upcoming expeditions</span>
-            <Button text="View All" />
+            <Button text="View All"  />
         </div>
         <div className="proxima-pills-container 
           grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-2 gap-5

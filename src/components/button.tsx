@@ -1,9 +1,9 @@
 
-
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
   className?: string;
   ref?: React.Ref<HTMLButtonElement>; 
+  props?: ButtonProps
 }
 
 export const Button = ({ text, className, ref, ...props }: ButtonProps) => {

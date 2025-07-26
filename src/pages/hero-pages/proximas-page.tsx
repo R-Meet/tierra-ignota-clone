@@ -3,7 +3,6 @@ import ProximaPill from "../../components/proxima-pill";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "../../components/button";
-import { useNavigate } from "@tanstack/react-router";
 gsap.registerPlugin(ScrollTrigger);
 
 export const pillData = [
@@ -53,7 +52,6 @@ export const pillData = [
 
 const Proximas = () => {
 
-  const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement | null>(null);
   const topBorderRef = useRef<HTMLDivElement | null>(null);
   const leftBorderRef = useRef<HTMLDivElement | null>(null);
@@ -99,7 +97,7 @@ const Proximas = () => {
 
         <div className="w-full pt-2 pb-2 flex justify-between sticky top-14 left-0 bg-[#F2F0E9] z-30">
           <span className="text-2xl -skew-x-6">Upcoming expeditions</span>
-            <Button text="View All" onClick={() => navigate({ to: `${import.meta.env.BASE_URL}expenditions` })} />
+            <Button text="View All" />
         </div>
         <div className="proxima-pills-container 
           grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-2 gap-5
