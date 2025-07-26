@@ -3,7 +3,7 @@ import { ShowcaseWithImg } from '../../components/showcase'
 const ProjectShowCase = () => {
   return (
     <ShowcaseWithImg
-      height='-nav'
+      // height='-nav'
       title='GET TO KNOW US'
       subtitle='Our philosophy'
       desc=' is based on understanding travel as an opportunity to immerse ourselves in the local environment and understand other ways of living life without prejudice.'

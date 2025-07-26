@@ -7,7 +7,6 @@ const LeftText = () => {
 
   const containerRef = useRef<HTMLDivElement | null>(null);
   const middleBorderRef = useRef<HTMLDivElement | null>(null);
-  const rightBorderRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
 

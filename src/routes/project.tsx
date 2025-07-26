@@ -6,6 +6,7 @@ import Footer from '../pages/hero-pages/footer'
 import RightText from '../pages/project/right-text'
 import InteractionShowCase from '../pages/project/interactio-showcase'
 import Visit from '../pages/project/visit'
+import ProjectSlogan from '../pages/project/project-slogan'
 
 export const Route = createFileRoute('/project')({
   component: RouteComponent,
@@ -21,6 +22,11 @@ function RouteComponent() {
     />
     <InteractionShowCase/>
     <Visit/>
+    <RightText
+      para1={'That desire grew stronger and stronger, and each of us on our own, we began to live adventures around the world until we gained the experience, local contacts, and knowledge necessary to finally reach those communities we had long dreamed of.'}
+      para2={'Several years later, we met and decided to join forces to create a joint project that would allow us to bring along other inquisitive minds who, perhaps, were also watching the same travel documentaries, without knowing how to get to those places.'}
+    />
+    <ProjectSlogan/>
     <Footer/>
   </ProjectLayout>
 }

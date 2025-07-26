@@ -33,7 +33,7 @@ const Slogan = () => {
         </a>
         <p>
           <span>immersive a </span>
-          <span className="text-[#B2ABEF] italic border-b border-black cursor-pointer hover:text-black transition duration-700">places</span>
+          <a href={`${import.meta.env.BASE_URL}/expenditions`} className="text-[#B2ABEF] italic border-b border-black cursor-pointer hover:text-black transition duration-700">places</a>
           <span> remote</span>
         </p>
       </div>

@@ -38,9 +38,9 @@ export const NavMenu = () => {
         </button>
 
         <div className="flex-1 w-full flex flex-col items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl --font-romie capitalize">
-          <a href="#" className="hover:text-[#8D997C] text-[#d8eabe]">Home</a>
-          <a href="#" className="hover:text-[#8D997C] text-[#d8eabe]">Expeditions</a>
-          <a href="#" className="hover:text-[#8D997C] text-[#d8eabe]">The project</a>
+          <a href={`${import.meta.env.BASE_URL}`} className="hover:text-[#8D997C] text-[#d8eabe]">Home</a>
+          <a href={`${import.meta.env.BASE_URL}/expenditions`} className="hover:text-[#8D997C] text-[#d8eabe]">Expeditions</a>
+          <a href={`${import.meta.env.BASE_URL}/project`} className="hover:text-[#8D997C] text-[#d8eabe]">The project</a>
         </div>
 
         <footer className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 md:gap-7 px-2 text-center">
